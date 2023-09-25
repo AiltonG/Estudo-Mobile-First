@@ -57,3 +57,62 @@
 .container__botao{
   display: none;
 }
+
+/*--------------------itens responsivos TABLET-------------------------*/
+.container__titulo{
+  display: none;
+}
+
+.opcoes{
+  display: none;
+}
+
+
+/*-----------------------RESPONSIVO TABLET----------------------------*/
+@media screen and (min-width: 1024px) {
+  
+  .container__titulo, 
+  .container__titulo--negrito {
+    font-family: var(--font-secundaria);
+    font-size: 30px;
+  }
+
+  .container__titulo {
+    display: block;
+    font-weight: 300;
+  }
+  .container__titulo--negrito {
+    font-weight: 700;
+  }
+
+  .opcoes{
+    display: flex;
+  }
+
+  .opcoes__item{
+    padding: 0 1em;
+    text-transform: uppercase;
+  }
+
+  .opcoes__link{
+    text-decoration: none;
+    color: var(--preto);
+  }
+
+  .transparente{
+    display: none;
+  }
+
+  .cabecalho__menu-hamburguer{
+    display: none;
+  }
+
+  .opcoes__botao:checked ~ .lista-menu{
+    display: block;
+    width: auto;
+  }
+  .opcoes__botao{
+    display: none;
+  }
+
+}
